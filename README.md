@@ -14,11 +14,12 @@
 
 ### 🔭 What I'm building
 
-**[cruxhive](https://github.com/cruxhive/cruxhive)** — one versioned, human-approved knowledge base that **every AI coding tool reads from over MCP** (Claude, Cursor, opencode), so you stop re-explaining your context to each one. Local-first. MIT.
+**[cruxhive](https://github.com/cruxhive/cruxhive)** — one versioned, human-approved knowledge base that **every AI coding tool reads from over MCP** (Claude, Cursor, opencode), so you stop re-explaining your context to each one. Local-first.
 
-<a href="https://github.com/cruxhive/cruxhive">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=cruxhive&repo=cruxhive&hide_border=true" alt="cruxhive" />
-</a>
+[![cruxhive stars](https://img.shields.io/github/stars/cruxhive/cruxhive?style=flat-square&logo=github&label=cruxhive&color=24A1C1)](https://github.com/cruxhive/cruxhive)
+[![license](https://img.shields.io/github/license/cruxhive/cruxhive?style=flat-square&color=blue)](https://github.com/cruxhive/cruxhive/blob/main/LICENSE)
+[![top language](https://img.shields.io/github/languages/top/cruxhive/cruxhive?style=flat-square&logo=python&logoColor=white)](https://github.com/cruxhive/cruxhive)
+[![last commit](https://img.shields.io/github/last-commit/cruxhive/cruxhive?style=flat-square&color=success)](https://github.com/cruxhive/cruxhive/commits)
 
 Also in flight: a **multi-tenant deployment platform** (repo → running app in one command, container-native) and a **reusable agentic toolchain** — skills, agents, and a file-based memory system that spans a whole workspace of projects.
 
@@ -35,19 +36,6 @@ Also in flight: a **multi-tenant deployment platform** (repo → running app in 
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat-square&logo=traefikproxy&logoColor=white)
-
----
-
-### 📊 Activity
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=jessin01&show_icons=true&count_private=true&include_all_commits=true&hide_border=true" alt="Jessin's GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jessin01&layout=compact&langs_count=8&hide_border=true" alt="Top languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=jessin01&hide_border=true" alt="Contribution streak" />
-</p>
 
 ---
 
