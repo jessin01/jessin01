@@ -58,7 +58,7 @@
   var ALPHABET = [
     ['A', 'Apple', '🍎'], ['B', 'Ball', '⚽'], ['C', 'Cat', '🐱'], ['D', 'Duck', '🦆'],
     ['E', 'Elephant', '🐘'], ['F', 'Fish', '🐟'], ['G', 'Giraffe', '🦒'], ['H', 'Hat', '🎩'],
-    ['I', 'Ice cream', '🍦'], ['J', 'Jellyfish', '🪼'], ['K', 'Kite', '🪁'], ['L', 'Lion', '🦁'],
+    ['I', 'Ice cream', '🍦'], ['J', 'Jelly', '🍮'], ['K', 'Kite', '🪁'], ['L', 'Lion', '🦁'],
     ['M', 'Moon', '🌙'], ['N', 'Nest', '🪺'], ['O', 'Orange', '🍊'], ['P', 'Panda', '🐼'],
     ['Q', 'Queen', '👑'], ['R', 'Rainbow', '🌈'], ['S', 'Star', '⭐'], ['T', 'Train', '🚂'],
     ['U', 'Umbrella', '☂️'], ['V', 'Violin', '🎻'], ['W', 'Whale', '🐳'], ['X', 'Xylophone', '🎹'],
@@ -149,7 +149,7 @@
   var count = 0;
 
   function renderEmptyPond() {
-    countPond.innerHTML = '<span class="count-empty">The pond is empty — tap the button!</span>';
+    countPond.innerHTML = '<span class="count-empty">The pond is empty - tap the button!</span>';
   }
 
   function resetCount() {
