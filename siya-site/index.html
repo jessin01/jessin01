@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Siya's Playhouse — Learn & Play</title>
+<meta name="description" content="A bright, friendly play corner for toddlers: letters, colours, numbers, shapes, animals and rhymes. Big buttons, gentle sounds, made for little hands." />
+<meta name="theme-color" content="#ffd166" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌈</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip" href="#play">Skip to the games</a>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="sky" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <div class="balloon b1">🎈</div>
+    <div class="balloon b2">🎈</div>
+    <div class="bird">🐦</div>
+  </div>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Welcome to</p>
+    <h1 class="title" aria-label="Siya's Playhouse">
+      <span class="w">
+        <span class="l" style="--i:0">S</span><span class="l" style="--i:1">i</span><span class="l" style="--i:2">y</span><span class="l" style="--i:3">a</span><span class="l" style="--i:4">'</span><span class="l" style="--i:5">s</span>
+      </span>
+      <span class="w">
+        <span class="l" style="--i:6">P</span><span class="l" style="--i:7">l</span><span class="l" style="--i:8">a</span><span class="l" style="--i:9">y</span><span class="l" style="--i:10">h</span><span class="l" style="--i:11">o</span><span class="l" style="--i:12">u</span><span class="l" style="--i:13">s</span><span class="l" style="--i:14">e</span>
+      </span>
+    </h1>
+    <p class="lede">Letters, colours, numbers, shapes, animals and songs —
+      all with big happy buttons made for little hands. 🌈</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#play">Let's play! <span aria-hidden="true">▶</span></a>
+      <button class="btn btn-ghost" id="soundToggle" aria-pressed="true">
+        <span class="ico" id="soundIco" aria-hidden="true">🔊</span>
+        <span id="soundLabel">Sound on</span>
+      </button>
+    </div>
+    <p class="hint">Tip: turn the volume up — everything talks out loud.</p>
+  </div>
+
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,120 480,8 720,40 C960,72 1200,120 1440,72 L1440,120 L0,120 Z"></path></svg>
+  </div>
+</header>
+
+<main id="play">
+
+  <!-- ================= ALPHABET ================= -->
+  <section class="section sec-abc" aria-labelledby="h-abc">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="badge">🔤 Game 1</span>
+        <h2 id="h-abc">The Alphabet Wall</h2>
+        <p class="sub">Tap a letter to hear its sound and meet a friend who starts with it.</p>
+      </div>
+
+      <div class="abc-stage">
+        <div class="abc-card" id="abcCard" aria-live="polite">
+          <div class="abc-emoji" id="abcEmoji">🍎</div>
+          <div class="abc-letter" id="abcLetter">A a</div>
+          <div class="abc-word" id="abcWord">Apple</div>
+        </div>
+        <div class="abc-grid" id="abcGrid" role="group" aria-label="Alphabet letters"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COLOURS ================= -->
+  <section class="section sec-colour" aria-labelledby="h-colour">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="badge">🎨 Game 2</span>
+        <h2 id="h-colour">Splash of Colour</h2>
+        <p class="sub">Tap a blob to paint the whole card and say the colour out loud.</p>
+      </div>
+
+      <div class="colour-stage">
+        <div class="colour-canvas" id="colourCanvas">
+          <span class="colour-name" id="colourName">Tap a colour!</span>
+        </div>
+        <div class="colour-blobs" id="colourBlobs" role="group" aria-label="Colours"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COUNTING ================= -->
+  <section class="section sec-count" aria-labelledby="h-count">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="badge">🔢 Game 3</span>
+        <h2 id="h-count">Count the Ducks</h2>
+        <p class="sub">Tap the big button to add one more friend. How high can we go?</p>
+      </div>
+
+      <div class="count-stage">
+        <div class="count-number" id="countNumber" aria-live="polite">0</div>
+        <div class="count-pond" id="countPond" aria-label="Counting friends"></div>
+        <div class="count-controls">
+          <button class="btn btn-big" id="countAdd">Add one more 🐥</button>
+          <button class="btn btn-ghost" id="countReset">Start again ↺</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHAPES ================= -->
+  <section class="section sec-shape" aria-labelledby="h-shape">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="badge">⬢ Game 4</span>
+        <h2 id="h-shape">Shape Parade</h2>
+        <p class="sub">Tap a shape — it wiggles and tells you its name.</p>
+      </div>
+      <div class="shape-grid" id="shapeGrid" role="group" aria-label="Shapes"></div>
+    </div>
+  </section>
+
+  <!-- ================= ANIMALS ================= -->
+  <section class="section sec-animal" aria-labelledby="h-animal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="badge">🐮 Game 5</span>
+        <h2 id="h-animal">Who Says What?</h2>
+        <p class="sub">Tap an animal to hear the noise it makes.</p>
+      </div>
+      <div class="animal-grid" id="animalGrid" role="group" aria-label="Animals"></div>
+    </div>
+  </section>
+
+  <!-- ================= RHYMES ================= -->
+  <section class="section sec-rhyme" aria-labelledby="h-rhyme">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="badge">🎵 Sing along</span>
+        <h2 id="h-rhyme">Rhyme Time</h2>
+        <p class="sub">Old favourites, ready for bedtime or the car. Tap a card to open the words.</p>
+      </div>
+      <div class="rhyme-grid" id="rhymeGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= GROWN-UPS ================= -->
+  <section class="section sec-grown" aria-labelledby="h-grown">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="badge">👋 For grown-ups</span>
+        <h2 id="h-grown">A little note for the big people</h2>
+      </div>
+      <div class="grown-grid">
+        <article class="note">
+          <div class="note-ico" aria-hidden="true">🫱</div>
+          <h3>Built for little hands</h3>
+          <p>Every button is oversized and forgiving, there are no menus to get lost in, and nothing here can navigate away from the page.</p>
+        </article>
+        <article class="note">
+          <div class="note-ico" aria-hidden="true">🔇</div>
+          <h3>Sound you control</h3>
+          <p>Voices use your device's own speech, so nothing is downloaded. One tap on <b>Sound on / off</b> at the top mutes the whole playhouse.</p>
+        </article>
+        <article class="note">
+          <div class="note-ico" aria-hidden="true">🕊️</div>
+          <h3>No ads, no tracking</h3>
+          <p>No accounts, no adverts, no data collected, no links out to the wider internet. Just a quiet corner to play in.</p>
+        </article>
+        <article class="note">
+          <div class="note-ico" aria-hidden="true">⏳</div>
+          <h3>Best in small doses</h3>
+          <p>Ten happy minutes beats an hour. Play alongside where you can — say the letters together and it counts double.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-emoji" aria-hidden="true">🌙 ⭐ 🧸</div>
+    <p class="foot-big">Made with love for Siya.</p>
+    <p class="foot-small">Sweet dreams, little one.</p>
+  </div>
+</footer>
+
+<div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
